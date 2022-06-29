@@ -1,0 +1,29 @@
+<!--pages/musicList/musicLsit.wxml-->
+<view class="time-view">
+    <view class="clock-view">
+        <view class="time-block">
+            <text>{{hour}}</text>
+        </view>
+        <view class="time-block">
+            <text>{{minute}}</text>
+        </view>
+        <view class="time-block">
+            <text>{{second}}</text>
+        </view>
+    </view>
+</view>
+<view class="saying-view">
+    <text>{{saying}}</text>
+</view>
+<block wx:for="{{musicArr}}" wx:key="id">
+    <navigator class="musicList-view" url="/pages/musicPlay/musicPlay?id={{item.id}}">
+        <view class="music-view">
+            <image src="{{item.poster}}" class="poster-img"></image>
+            <view class="information-view">
+                <text class="musicName-text">{{item.name}}</text>
+                <text class="author-text">{{item.author}}</text>
+            </view>
+            <image src="/image/cat.png" class="cat-img"></image>
+        </view>
+    </navigator>
+</block>

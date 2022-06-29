@@ -1,0 +1,82 @@
+/* pages/musicList/musicLsit.wxss */
+
+page{
+    background-color: #2A2A2A;
+}
+.musicList-view{
+    display: flex;
+    justify-content: center;
+}
+.music-view{
+    display: flex;
+    width: 680rpx;
+    height: 58px;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: #2A2A2A;
+    box-shadow:  6px 6px 12px #232323,
+             -6px -6px 12px #313131;
+}
+.information-view{
+    width: 320rpx;
+}
+.musicName-text{
+    display: block;
+    font-size: 15px;
+    color: rgb(231, 231, 231);
+}
+.author-text{
+    display: block;
+    font-size: 10px;
+    color: rgb(150, 150, 150);
+}
+.poster-img{
+    margin-left: 25px;
+    width: 80px;
+    height: 66px;
+    border-radius: 8px;
+}
+.cat-img{
+    margin-right: 10px;
+    width: 21px;
+    height: 24px;
+}
+.time-view{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.clock-view{
+    width: 270px;
+    height: 90px;
+    background-color: #a93232;
+    border-radius: 15px;
+    display: flex;
+}
+.time-block{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #a93232;
+    box-shadow:  5px 5px 11px #952c2c,
+             -5px -5px 11px #bd3838;
+}
+.time-block text{
+    color: rgb(231, 231, 231);
+    font-size: 50px;
+}
+.saying-view{
+    margin: 10px 20px 0px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.saying-view text{
+    color: rgb(231, 231, 231);
+    font-size: 15px;
+}

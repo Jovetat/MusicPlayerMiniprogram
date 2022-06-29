@@ -1,0 +1,20 @@
+<!--pages/musicPlay/musicPlay.wxml-->
+<view class="music-view">
+    <image src="{{now_music.poster}}" class="poster-img"></image>
+    <text class="name-text">{{now_music.name}}</text>
+    <text class="authot-text">—— {{now_music.author}}</text>
+    <view class='lyric-view'>
+        <text>{{storyContent[nowtextIndex-1][1]}}</text>
+        <text style="color: #FFD7D7; font-size: 16px;">{{storyContent[nowtextIndex][1]}}</text>
+        <text>{{storyContent[nowtextIndex+1][1]}}</text>
+    </view>
+    <slider min="0" max="{{duration}}" step="1" value="{{currentTime}}" block-color="#a93232"
+        block-size="16" activeColor="#952c2c" bindchange="progressBarBindchange" bindchanging="progressBarBindchange">
+        </slider>
+    
+    <view class="btn-view">
+        <image src="/image/lastSong.png" class="control-imgbtn" bindtap="lastSongBindtap"></image>
+        <image src="{{btn_src}}" class="btn-img" bindtap="beginBindtap"></image>
+        <image src="/image/cutSong.png" class="control-imgbtn" bindtap="cutSongBindtap"></image>
+    </view>
+</view>

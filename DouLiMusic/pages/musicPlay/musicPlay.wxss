@@ -1,0 +1,59 @@
+/* pages/musicPlay/musicPlay.wxss */
+
+page{
+    background-color: #2A2A2A;
+}
+.music-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.poster-img{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    margin-top: 10px;
+    box-shadow:  5px 5px 23px #131313,
+             -5px -5px 23px #4d4d4d;
+}
+.name-text{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-top: 50rpx;
+}
+.authot-text{
+    color: rgb(199, 199, 199);
+    font-size: 14px;
+    margin-top: 10rpx;
+}
+.btn-view{
+    height: 80px;
+    width: 500rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-img{
+    width: 60px;
+    height: 60px;
+}
+.control-imgbtn{
+    width: 45px;
+    height: 45px;
+}
+.lyric-view{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180rpx;
+    width: 600rpx;
+    margin: 10px 0 10px 0;
+}
+.lyric-view text{
+    font-size: 14px;
+    color: #BABABA;
+}
+.music-view slider{
+    width: 500rpx;
+}

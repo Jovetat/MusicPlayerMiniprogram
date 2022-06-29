@@ -1,1 +1,5 @@
-# MusicPlayerMiniprogram
+# 音乐播放器小程序，JavaScript
+### 基本功能
+#### 包含音乐播放列表、音乐播放、暂停切歌、进度条
+	固定音乐列表，无法由用户更改
+	通过 slider 实现音乐进度条
